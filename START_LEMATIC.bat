@@ -18,7 +18,7 @@ if %errorlevel% neq 0 (
     :: Versuch der Installation via winget (Standard in Windows 10/11)
     winget install -e --id OpenJS.NodeJS
     
-    if %errorlevel% neq 0 (
+    if !errorlevel! neq 0 (
         echo.
         echo [FEHLER] Die automatische Installation ist fehlgeschlagen.
         echo bitte gehe auf https://nodejs.org und lade die "LTS" Version herunter.
@@ -43,7 +43,7 @@ echo [WICHTIG] Dieses Fenster muss offen bleiben, solange du die Website ansiehs
 echo.
 
 :: 4. Website starten und Browser öffnen
-start http://localhost:3000
+start "" cmd /c "timeout /t 5 >nul && start http://localhost:3000"
 npm run dev
 
 pause

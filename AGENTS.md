@@ -41,7 +41,7 @@ Once testing is configured, adhere strictly to these commands:
 - `src/data/`: Centralized data (`projects.ts`). Specifically designed with comments to be safely edited by non-technical users.
 - `src/lib/` or `src/utils/`: For utility functions like `cn` (combining `clsx` and `twMerge`).
 - `public/`: Static assets (logos, fallback images).
-- `START_LEMATIC.bat` / `ANLEITUNG_MARTIN.md`: Custom launch scripts and guides for the Windows user. **CRITICAL:** Do not break their functionality or rename paths they rely on.
+- `START_LEMATIC.bat` / `README.md`: Custom launch scripts and guides for the Windows user. **CRITICAL:** Do not break their functionality or rename paths they rely on.
 
 ## 4. Code Style Guidelines
 
